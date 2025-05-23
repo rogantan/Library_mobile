@@ -45,14 +45,12 @@ public class AuthorizationActivity extends AppCompatActivity {
                 userCursor.moveToFirst();
                 String userName = userCursor.getString(3);
                 Toast.makeText(this, "Добро пожаловать, " + userName + "!", Toast.LENGTH_SHORT).show();
-
                 Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
                 finish();
             } else {
                 Toast.makeText(this, "Неверный логин или пароль", Toast.LENGTH_SHORT).show();
             }
-
             userCursor.close();
         }
     }
