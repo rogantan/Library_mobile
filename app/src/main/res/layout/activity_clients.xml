@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clients"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ClientsActivity">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/roundered_background"
-        android:backgroundTint="#FF5722"
+        android:backgroundTint="#1131BA"
         android:paddingLeft="30dp"
         android:paddingTop="20dp"
         android:paddingRight="30dp"
         android:paddingBottom="20dp"
-        android:text="Книги"
+        android:text="Клиенты"
         android:textColor="#FDFDFD"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,11 +27,11 @@
         app:layout_constraintVertical_bias="0.024" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#FFC107"
-        android:text="Добавить книгу"
+        android:backgroundTint="#770CCC"
+        android:text="Добавить клиента"
         app:cornerRadius="@android:dimen/app_icon_size"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,12 +41,11 @@
         app:layout_constraintVertical_bias="0.181" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#8BC34A"
-        android:text="Клиенты"
-        android:onClick="ClientActivity"
+        android:backgroundTint="#07818C"
+        android:text="Дневники"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.884"
@@ -55,7 +54,7 @@
         app:layout_constraintVertical_bias="0.181" />
 
     <ListView
-        android:id="@+id/list"
+        android:id="@+id/list1"
         android:layout_width="324dp"
         android:layout_height="91dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -64,5 +63,4 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.323" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

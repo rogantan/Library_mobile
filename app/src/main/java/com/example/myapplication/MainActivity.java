@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import android.view.View;
 import android.widget.Toast;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -48,6 +50,10 @@ public class MainActivity extends AppCompatActivity {
         list.setAdapter(userAdapter);
     }
 
+    public void ClientActivity(View view) {
+        Intent intent = new Intent(this, ClientsActivity.class);
+        startActivity(intent);
+    }
     @Override
     public void onDestroy(){
         super.onDestroy();
