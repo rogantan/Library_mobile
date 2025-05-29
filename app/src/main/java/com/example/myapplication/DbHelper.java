@@ -5,7 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class DbHelper extends SQLiteOpenHelper {
-    private static final String DATABASE_NAME = "tables.db";
+    private static final String DATABASE_NAME = "librar.db";
     private static final int DATABASE_VERSION = 1;
     public DbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -48,6 +48,10 @@ public class DbHelper extends SQLiteOpenHelper {
         db.execSQL(insertEmployee);
         String insertBook = "INSERT INTO books (Name, Author, Description) VALUES ('Колобок', 'Народ', 'Сказка о колобке')";
         db.execSQL(insertBook);
+        String insertClient = "INSERT INTO clients (FirstName, LastName, Phone, Email) VALUES ('Иван', 'Иванов', '79138882055', 'ivan@gmail.com')";
+        db.execSQL(insertClient);
+        String insertReading = "INSERT INTO reading_journal (ClientId, BookId, EmployeeId, StartDate, EndDate) VALUES (1, 1, 1, '2025-5-29', '2025-06-05')";
+        db.execSQL(insertReading);
     }
 
     @Override
