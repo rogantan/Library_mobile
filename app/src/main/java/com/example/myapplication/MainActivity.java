@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         list = findViewById(R.id.list);
         btn1 = findViewById(R.id.button);
         btn2 = findViewById(R.id.button2);
-        helper = new DbHelper(getApplicationContext());
+        helper = new DbHelper(this);
         btn1.setOnClickListener(v -> {
             Intent intent = new Intent(this, AddBookActivity.class);
             startActivity(intent);

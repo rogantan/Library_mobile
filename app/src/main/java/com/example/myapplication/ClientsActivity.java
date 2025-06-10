@@ -3,6 +3,7 @@ package com.example.myapplication;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
@@ -37,6 +38,9 @@ public class ClientsActivity extends AppCompatActivity {
         list.setAdapter(userAdapter);
     }
 
+    public void AddClient(View view) {
+
+    }
     @Override
     public void onDestroy(){
         super.onDestroy();

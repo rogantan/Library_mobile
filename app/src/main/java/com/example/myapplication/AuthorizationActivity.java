@@ -28,7 +28,6 @@ public class AuthorizationActivity extends AppCompatActivity {
 
         helper = new DbHelper(this);
         db = helper.getWritableDatabase();
-
     }
 
     public void Authorization(View view) {
